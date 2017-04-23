@@ -1,0 +1,21 @@
+version: "3"
+services:
+  redis:
+    image: redis:3.2
+    ports:
+      - "6379:6379"
+  mongo:
+    image: mongo:3.4.3
+    ports:
+      - "27017:27017"
+  # mysql:
+  #   image: mysql:5.7.18
+  #   ports:
+  #     - "3306:3306"
+  #   volumes:
+  #     - ./tmp:/var/run/mysqld/
+  #   environment:
+  #     MYSQL_ROOT_PASSWORD: password
+  #     MYSQL_DATABASE: sampledb
+  #     MYSQL_USER: sample
+  #     MYSQL_PASSWORD: password

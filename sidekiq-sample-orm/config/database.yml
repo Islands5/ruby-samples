@@ -1,0 +1,8 @@
+db:
+  development:
+    adapter: mysql2
+    host: localhost
+    username: root
+    password: password
+    database: sample_db
+    pool: 30
