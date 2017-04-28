@@ -6,5 +6,5 @@ end
 
 sleep 10
 puts "###"
-p UserMongo.last
+p UserMongo.first
 UserMongo.delete_all

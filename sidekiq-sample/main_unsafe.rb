@@ -4,7 +4,7 @@ require './worker.rb'
   OurWorker.perform_async("unsafe")
 end
 
-sleep 10
+sleep 5
 puts "###"
 puts File.read("./counter").to_i
 File.delete "./counter"

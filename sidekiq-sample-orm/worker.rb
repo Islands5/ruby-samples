@@ -47,10 +47,10 @@ class OurWorker
   def countup orm
     case orm
     when 'mysql'
-      user = User.last || User.create(seq: 0)
+      user = User.first || User.create(seq: 0)
       user.increment!(:seq)
     when 'mongoid'
-      user_mongo = UserMongo.last || UserMongo.create(seq: 0)
+      user_mongo = UserMongo.first || UserMongo.create(seq: 0)
       user_mongo.inc(seq: 1)
     end
   end

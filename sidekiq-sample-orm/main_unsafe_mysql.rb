@@ -6,5 +6,5 @@ end
 
 sleep 10
 puts "###"
-p User.last
+p User.first
 User.delete_all

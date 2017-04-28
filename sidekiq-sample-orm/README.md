@@ -4,7 +4,7 @@
 $bundle exec sidekiq -r ./worker.rb
 ```
 
-## pyrの準備
+## pryの準備
 
 ```
 $bundle exec pry -r ./worker.rb
